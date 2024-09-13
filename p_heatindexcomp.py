@@ -17,11 +17,11 @@ data = read_data(columns, types=types)
 # Compute the heat index
 # heatindex = []
 # for temp, hum in zip(data['tempout'], data['humout']):
-#    heatindex.append(heatindex(temp, hum))
+#    heatindex.append(compute_heatindex(temp, hum))
 
 # better way
 # # Compute the heat index
-heatindex = [heatindex(t, h) for t, h in zip(data['tempout'], data['humout'])]
+heatindex = [compute_heatindex(t, h) for t, h in zip(data['tempout'], data['humout'])]
 
 # Output comparison of data
 print_comparison('HEAT INDX', data['date'], data['time'], data['heatindex'], heatindex)
