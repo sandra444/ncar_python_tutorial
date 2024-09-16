@@ -22,3 +22,5 @@ setup(
     packages=["mysci"],
     install_requires=[],
 )
+
+# dependencies (install_requires) which is set to an empty list since our current package uses no external packages.
