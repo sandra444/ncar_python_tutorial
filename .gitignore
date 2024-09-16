@@ -1,1 +1,5 @@
 __pycache__/
+
+# add after installing package from github instead of local
+build/
+mysci.egg-info/
